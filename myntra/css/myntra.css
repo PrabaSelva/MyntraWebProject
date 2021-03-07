@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #eee;
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+/*HEADER BLOCK CODE STARTS HERE*/
+
+#headerBlock{
+    background-color: #fff;
+    width:100%;
+    height:75px;
+}
+
+#headerBlock article{
+    width:90%;
+    height:75px;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+
+}
+
+.leftBlock
+{
+    width: 40%;
+    display:flex;
+}
+
+.logoBlock{
+    width:15%;  
+}
+
+.leftMenu{
+    width:85%;
+}
+
+.logoBlock a{
+    background: url(../images/MyntraWebSprite_27_01_2021.png);
+    display: inline-block;
+    width:56px;
+    height:36px;
+    background-position: -462px 0;
+    background-size: 1404px 105px;
+
+}
+.leftMenu >ul{
+    list-style: none;
+    display: flex;
+}
+
+.leftMenu >ul >li >a{
+   color: #111;
+   text-decoration: none;
+   padding:  20px;
+   line-height: 40px;
+   font-weight: bold;
+}
+
+.rightBlock
+{
+    width: 60%;
+    display:flex;
+}
+
+.searchBlock{
+    width:70%;
+}
+
+.rightMenu{
+    width:30%;
+    justify-content: flex-end;
+    display: flex;
+    
+}
+
+.searchBlock form{
+    margin-left: 70px;
+}
+.rightMenu >ul{
+   list-style: none;
+   display:flex;
+   align-items: center;
+}
+
+.rightMenu ul >li >a{
+    text-decoration: none;
+    padding: 0 12px;
+    color: #111;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight:bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.rightMenu ul li{
+    position:relative;
+}
+
+.searchBlock input{
+    width: 100%;
+    padding: 8px 45px;
+    height: 40px;
+    border: 1px solid #e6e1e1;
+    border-radius: 2px;
+}
+    
+.searchBlock form span{
+    position:relative;
+}
+
+.searchBlock form span i {
+    position: absolute;
+    top:6px;
+    left:17px;
+
+}
+.dropdown{
+    position:absolute;
+    background-color: #fff;
+    height:420px;
+    width: 300px;
+    left:-110px;
+    top:57px;
+    padding:10px 20px;
+    box-shadow: 1px 3px 5px 1px #ccc;
+    display: none;
+}
+.dropdown ul{
+    list-style: none;
+}
+.welcomeBlock h2{
+    font-size: 13px;
+    color:#555;
+}
+
+.welcomeBlock button{
+    padding:10px;
+    margin:20px 0;
+    background: transparent;
+    border:1px solid #eaeaea;
+    color:#ff3f63;
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.welcomeBlock >button:hover{
+    border:1px solid #ff3f6c;
+}
+.welcomeBlock{
+   border-bottom: 1px solid #eee;
+}
+.orderBlock{
+   border-bottom: 1px solid #eee;
+   padding:12px 0;
+}
+
+.orderBlock ul li a , .Myntra_Credit_Block ul li a{
+  text-decoration: none;
+  color:#555;
+  padding:3px 0px;
+  display:block;
+}
+.rightMenu > ul > li:hover > .dropdown{
+   display:block;
+}
+
+.leftMenu ul li{
+    position:relative;
+}
+
+#megaMenuBlock { 
+    height:500px;
+    width:1130px;
+    background: #fff;
+    position:absolute;
+    top:59px;
+    display: none;
+}
+
+#megaMenuBlock div{
+    flex:1;
+}
+
+#megaMenuBlock div:nth-child(odd){
+    background-color: #fff;
+}
+
+#megaMenuBlock div:nth-child(even){
+    background-color:#f8f8f8;
+}
+
+#megaMenuBlock ul li a{
+    text-decoration: none;
+    color:#111;
+    padding:3px 30px;
+    display:block;
+    font-size:14px;
+}
+
+#megaMenuBlock ul{
+    list-style: none;
+}
+
+#megaMenuBlock ul li:first-child a{
+    color:#ff3f6c;
+    padding: 16px 30px 7px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#megaMenuBlock ul li:nth-child(10) a{
+    border-bottom: 1px solid #eee;
+    padding: 3px 30px 10px 30px;
+    margin-bottom: 10px;
+}
+
+#megaMenuBlock ul li:nth-child(11) a{
+    color:#ff3f6c;
+    font-weight: bold;
+}
+
+.leftMenu > ul > li:hover > #megaMenuBlock{
+    display:flex;
+}
+
+
